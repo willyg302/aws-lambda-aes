@@ -12,7 +12,7 @@ $ lfm deploy gh:willyg302/aws-lambda-aes --role execution_role_arn
 
 aws-lambda-aes accepts a custom event with the following properties:
 
-- `enc`: A boolean, `true` if you want to encrypt and false otherwise
+- `enc`: A boolean, true if you want to encrypt and false otherwise
 - `message`: The message to encrypt or decrypt
 - `pass`: A password to use as the key
 - `opts`: Optional object containing cipher options
