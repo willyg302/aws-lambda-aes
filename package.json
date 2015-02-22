@@ -1,0 +1,32 @@
+{
+  "name": "aws-lambda-aes",
+  "version": "1.0.0",
+  "description": "A Lambda function for AES encryption/decryption",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/willyg302/aws-lambda-aes",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/willyg302/aws-lambda-aes"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "aws-lambda"
+  ],
+  "author": "William Gaul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willyg302/aws-lambda-aes/issues"
+  },
+  "dependencies": {
+    "extend": "^2.0.0",
+    "revalidator": "^0.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^5.0.1"
+  }
+}

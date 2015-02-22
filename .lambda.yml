@@ -1,0 +1,9 @@
+config:
+  FunctionName: aws-lambda-aes
+  Handler: index.handler
+  Mode: event
+  Runtime: nodejs
+  Description: A Lambda function for AES encryption/decryption
+install: npm install --production
+ignore:
+  - test/
