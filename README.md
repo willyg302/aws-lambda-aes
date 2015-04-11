@@ -5,7 +5,7 @@
 **Note**: This function exists largely to test the [Lambda Function Manager](https://github.com/willyg302/lfm). Using lfm you can deploy this function via the following:
 
 ```bash
-$ lfm deploy gh:willyg302/aws-lambda-aes --role execution_role_arn
+$ lfm deploy gh:willyg302/aws-lambda-aes
 ```
 
 ## Usage

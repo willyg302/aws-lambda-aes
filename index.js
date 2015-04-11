@@ -40,7 +40,7 @@ exports.handler = function(event, context) {
 		var errors = valid.errors.map(function(error) {
 			return error.property;
 		});
-		context.done("The following options are malformed: " + errors.join(', '));
+		context.fail("The following options are malformed: " + errors.join(', '));
 		return;
 	}
 
@@ -56,5 +56,5 @@ exports.handler = function(event, context) {
 	}
 
 	console.log("Result: " + result);
-	context.done(null, result);
+	context.succeed(result);
 };

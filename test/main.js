@@ -10,9 +10,11 @@ var mockHandler = function(enc, message, pass, cb, opts) {
 		pass: pass,
 		opts: opts
 	}, {
-		done: function(err, res) {
-			should(err).be.null;
+		succeed: function(res) {
 			cb(res);
+		},
+		fail: function(err) {
+			should.fail('Should not be called');
 		}
 	});
 };
@@ -35,7 +37,10 @@ var mockError = function(opts, expected) {
 		pass: 'nope',
 		opts: opts
 	}, {
-		done: function(err) {
+		succeed: function(res) {
+			should.fail('Should not be called');
+		},
+		fail: function(err) {
 			err.should.eql(expected);
 		}
 	});
